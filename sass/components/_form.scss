@@ -1,0 +1,136 @@
+
+.form {
+        &_group:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    
+        &_input{
+            font-size: 1.5rem;
+            font-family: inherit; //kena letak
+    
+            color: inherit; //kena letak
+            padding: 1.5rem 2rem;
+            border-radius: 2px;
+            background-color: $color-button-box-color;
+            border: none;
+            border-bottom: 5px solid transparent;
+            width: 95%;
+            display: block; //means dia ambik satu block
+            transition: all .7s;
+    
+            &:focus{
+                outline: none;
+                border-bottom: 5px solid $color-primary-background-light;
+            }
+    
+            &:focus:invalid{
+                border-bottom: 5px solid $color-invalid-red;
+            }
+    
+            &::-webkit-input-placeholder{
+                color: $color-grey-really-dark;
+            }
+    
+    
+        }
+    
+        
+        &_label{
+            color: $color-font-white;
+    
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            display: block;
+            transition: all .3s;
+            
+        }
+    
+        &_input:placeholder-shown + &_label // :placeholder-shown element that is currently displaying placeholder text
+         {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        &_radio_input{
+            display: none;
+        }
+    
+        &_radio-group{
+            width: 32%;
+            display: inline-block;
+    
+            @include respond(tab-port) {
+                width: 100%;
+                margin-bottom: 2rem;    
+                
+            }
+        }
+    
+        &_radio_label {
+            font-size: $default-font-size;
+            cursor: pointer;
+            position: relative;
+            padding-left: 4rem;
+        }
+    
+        &_radio-button {
+            height: 3rem;
+            width: 3rem;
+            border: 5px solid $color-button-color-black;
+            border-radius: 50%;
+    
+            display: inline-block;
+            position: absolute;
+    
+            left: 0;
+            top: -.4rem;
+    
+    
+    
+            &::after{
+                content:"";
+                
+                height: 1rem;
+                width: 1rem;
+                border-radius: 50%;
+    
+                display: inline-block;
+                position: absolute;
+    
+                left: 50%;
+                top: 50%;
+    
+                transform: translate(-50%,-50%);
+                background-color: $color-button-color-black;
+    
+                opacity: 0;
+                transition: opacity .2s;
+            }
+        }
+    
+        &_radio_input:checked ~ &_radio_label &_radio-button::after {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+    .card{
+        display: grid;
+        grid-template-columns: 420px 420px;
+        
+        &_img{
+          background: url("https://images.unsplash.com/photo-1660317124738-99cd716766f6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE3NjQ3MzU&ixlib=rb-1.2.1&q=80") center/cover no-repeat;
+        }
+        
+        &_content{
+          background: #000;
+          height: 200px;
+          
+        }
+      }

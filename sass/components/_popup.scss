@@ -1,0 +1,119 @@
+.popup{
+    background-color: $color-button-black;
+
+    height: 100vh; //selalu pakai vh ntok fullscreen
+    width: 100%;
+    position: fixed;
+    top:0;
+    right: 0;
+
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    
+
+    &:target{
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    &_close{
+        &:link,
+        &:visited{
+            color: $color-button-black;
+            position: absolute;
+            top:2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            
+            display: inline-block;
+
+        }
+
+        &:hover{
+            color: $color-button-black;
+        }
+    }
+
+    &_content {
+      @include absCenter;
+
+      width: 75%;
+      
+      background-color: $color-main-background-red;
+      border-radius: 5px;
+      display: table;
+      border: $border-black;
+
+      overflow: hidden; //ntok overflow clip dlm content
+    }
+
+    &_left{
+        width: 33.33%;
+        display: table-cell;
+
+        @include respond(tab-land) {
+            width: 0;
+            display: inline-block;
+        }
+
+        @include respond(tab-port) {
+            width: 0;
+            display: inline-block;
+        }
+    }
+
+    &_img{
+        background-size: cover;
+        display: block;
+        width: 100%;
+        margin: 6rem 0 0 0;
+
+        @include respond(tab-land) {
+            display: none;
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+        
+
+    }
+
+    &_right{
+        width: 66.67%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 4rem;
+
+        @include respond(tab-land) {
+            width: 100%;
+            display:inline-block;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            display:inline-block;
+
+        }
+    }
+
+    &_text{
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+
+        column-count: 2;
+        column-gap: 4rem;
+        
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem; //default ambik 1em = 14px; 
+
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+}

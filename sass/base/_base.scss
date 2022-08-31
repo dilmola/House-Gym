@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before  {                     /* bintang tu is universal selector ntok reset bila bukak setiap browser for render a page for exact same way contoh h1 mungkin ada default margin */
+    margin:0;
+    padding:0;
+    box-sizing: inherit; //kena letak
+}
+
+html{
+    // this define what 1rem is
+    font-size: 62.5%;   //1rem = 10px     (10px(100%)/16px) = 62.5%
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px 
+    }
+
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px 
+    }
+
+
+    
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color:$color-font-green;
+    background: $color-main-background-white;
+    box-sizing: border-box;
+    
+    padding: 0; /* dari content ke margin ke border ke padding*/
+    
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}

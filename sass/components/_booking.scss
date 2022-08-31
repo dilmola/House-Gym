@@ -1,0 +1,104 @@
+/*.booking{
+    background-image: linear-gradient(90deg, 
+                                    ($color-secondary-color,) 0%,
+                                    ($color-secondary-color,) 58%,
+                                    transparent 58%)
+                                    ,url(../includes/booking_img.jpg); //solid colors gradient
+    background-size: 100%;
+    border-radius: 0px;
+    border: $border-black;
+    
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(106deg, 
+                            rgba($color-font-green, .8) 0%,
+                            rgba($color-font-green, .8) 70%,
+                            transparent 70%) 
+                            ,url(../includes/booking_img.jpg); //solid colors gradient
+        background-size: 100%;
+        border-radius: 0px;
+        box-shadow: 0 1.5rem 3rem rgba($color-button-black, .2); 
+
+    
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(106deg, 
+                            rgba($color-font-green, .8) 0%,
+                            rgba($color-font-green, .8) 100%,
+                            transparent 100%) 
+                            ,url(../includes/booking_img.jpg); //solid colors gradient
+        background-size: cover;
+        border-radius: 0px;
+        box-shadow: 0 1.5rem 3rem rgba($color-button-black, .2); 
+
+        
+    }
+
+    &_form{
+        padding: 6rem;
+        width: 60%;
+
+        @include respond(tab-land) {
+            padding: 6rem;
+            width: 70%; 
+        }
+
+        @include respond(tab-port) {
+            padding: 6rem;
+            width: 100%; 
+        }
+    }
+} */
+
+.booking{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    &-form{
+    
+    display: grid;
+    grid-template-columns: 490px 350px;
+    background-size: 100%;
+    border: $border-black;
+
+    &--left{
+        background: $color-secondary-color;
+        height: auto; 
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+    &--right{
+
+        background-color: $color-main-background-white;
+
+    
+        &_img {
+
+            background-size: auto;
+            height: 35rem;
+            display: inline-block;
+            margin: 6rem 0 0;
+    
+            
+    
+           
+    
+    
+        }
+        
+    
+    
+    }
+
+       
+    }
+  
+ 
+
+}

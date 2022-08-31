@@ -1,0 +1,49 @@
+.benefit-box{
+        background-color: $color-button-box-color;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        transition: all .2s;
+        background-color: $color-main-background-red;
+        border: 3px solid $color-border-black;
+        height: 50rem;
+
+
+    
+        &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+        }
+
+    &_img {
+        background-size: cover;
+        height: 15rem;
+        display: inline-block;
+
+        &--1{
+            background-image: url(../includes/f1_img.png);
+        }
+
+        &--2{
+            background-image: url(../includes/f2_img.png);
+        }
+
+        &--3{
+            background-image: url(../includes/f3_img.png);
+        }
+
+        &--4{
+            background-image: url(../includes/f4_img.png);
+        }
+
+
+    }
+
+    &_text{
+        text-align: justify;
+        
+    }
+    
+
+
+}

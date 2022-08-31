@@ -1,0 +1,65 @@
+.section-about{
+    padding: 4rem 0 24rem 0;
+    margin-top: 0;
+
+    @include respond(tab-port) {
+        padding: 11rem 0;
+
+    }
+}
+
+.section-benefit{
+    padding: 24rem 0 24rem 0;
+    background-color: $color-main-background-red;
+
+    margin-top: -13rem;
+    transform: skewY(-4deg);
+
+    & > * {
+        transform: skewY(4deg);
+    }
+
+    
+    @include respond(tab-port) {
+        padding: 11rem 0;
+
+    }
+    
+}
+
+.section-price{
+    margin-top: 6rem;
+    padding: 4rem 0 11rem 0;
+
+
+    
+    @include respond(tab-port) {
+        padding: 15rem 0;
+
+    }
+}
+
+.section-feedback{
+    padding: 4rem 0 24rem 0;
+    position: relative;
+
+    
+    @include respond(tab-port) {
+        padding: 11rem 0;
+
+    }
+
+}
+
+.section-book{
+    margin-top: 6rem;
+
+    padding: 4rem 0 24rem 0;
+
+    
+    @include respond(tab-port) {
+        padding: 11rem 0;
+
+    }
+}
+

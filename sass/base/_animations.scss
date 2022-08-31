@@ -1,0 +1,43 @@
+@keyframes moveToleft {     /* (moveInleft) bleh namakan apa saja properties ni */
+    0%{
+        opacity: 0;     /* opacity means transparent 0 means transparent habiss */
+        transform: translateX(-100px);  /* translate x maksud x-axis and -100px for to left */
+        
+    }
+
+    80%{
+        
+        transform: translateX(10px); /* ke belakang sket 10px */
+    }
+
+    100%{
+        opacity: 1;     /* opacity means transparent 1 means tak transparent dah */
+        transform: translate(0);    /* 0 means kembali ke asal axis */
+    }
+}
+
+@keyframes moveToRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{transform: translateX(-10px);}
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

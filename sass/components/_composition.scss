@@ -1,0 +1,71 @@
+.composition {
+    position: relative;
+
+    &_photo {
+        width: 55%;
+        
+        position: absolute;
+        border-radius: 0;
+        z-index: 10;        //gamba bertindih baru pakai
+        transition: all .2s;
+        outline-offset: 2rem;
+        border: $border-black;   //
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3%;
+            box-shadow: 0 1.5rem 4rem ($color-button-black, .2);
+        }
+        
+        &--p1 {
+            left: 0;
+            top: 8rem; 
+
+            @include respond(tab-port) {
+                left: 0;
+                top: -2rem;
+                transform: scale(1.3);
+                
+            }
+        }
+
+        &--p2 {
+            right: 0;
+            top: 13rem; 
+
+            @include respond(tab-port) {
+                left: 0;
+                top: -2rem;
+                transform: scale(1.3);
+
+                z-index: 100;
+            }
+        }
+
+        &--p3 {
+            left: 20%;
+            top: 20rem; 
+
+            @include respond(tab-port) {
+                left: 0;
+                top: -2rem;
+                transform: scale(1.3);
+            }
+        }
+
+        &:hover {
+            outline: 0.5rem solid $color-button-black;
+            
+            transform: scale(1.06) translateY(-0.2rem);
+            z-index: 20;
+        }
+
+    }
+    
+    &:hover &_photo:not(:hover){
+        transform: scale(0.90);
+    }
+
+    
+}
