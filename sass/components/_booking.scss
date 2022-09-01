@@ -12,7 +12,7 @@ display: flex;
     border: $border-black;
 
     @include respond(tab-port) {
-        grid-template-columns: 430px 350px;
+        grid-template-columns: 395px 350px;
 
     }
 
@@ -37,7 +37,10 @@ display: flex;
             display: inline-block;
             margin: 6rem 0 0;
     
-            
+            @include respond(tab-port) {
+                height: 45rem;
+        
+            }
     
            
     

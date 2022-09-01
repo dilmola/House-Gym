@@ -509,7 +509,7 @@ body {
     border: 3px solid #000000; }
     @media (max-width: 56.25em) {
       .booking-form {
-        grid-template-columns: 430px 350px; } }
+        grid-template-columns: 395px 350px; } }
     .booking-form--left {
       background: #D6D6D7;
       height: auto;
@@ -524,6 +524,9 @@ body {
         height: 35rem;
         display: inline-block;
         margin: 6rem 0 0; }
+        @media (max-width: 56.25em) {
+          .booking-form--right_img {
+            height: 45rem; } }
 
 .form_group:not(:last-child) {
   margin-bottom: 2rem; }
