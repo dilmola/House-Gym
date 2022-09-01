@@ -73,6 +73,7 @@
             cursor: pointer;
             position: relative;
             padding-left: 4rem;
+            text-transform: uppercase;
         }
     
         &_radio-button {
@@ -120,17 +121,3 @@
 
 
 
-    .card{
-        display: grid;
-        grid-template-columns: 420px 420px;
-        
-        &_img{
-          background: url("https://images.unsplash.com/photo-1660317124738-99cd716766f6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE3NjQ3MzU&ixlib=rb-1.2.1&q=80") center/cover no-repeat;
-        }
-        
-        &_content{
-          background: #000;
-          height: 200px;
-          
-        }
-      }

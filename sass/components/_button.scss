@@ -10,7 +10,7 @@
     margin: 32px 0 4px;
     text-transform: uppercase;
 
-    padding: 20px 40px; /* padding box button */
+    padding: 20px 40px; 
     width: auto;
     
     display: inline-flex;
@@ -20,6 +20,12 @@
 
     z-index: 100;
     cursor: pointer;
+
+        @include respond(tab-port) {
+        margin: 28px 0 4px;
+
+
+        }
     }
 
 

@@ -17,40 +17,11 @@
 
     
 
-   /*  &--main{
-    display: block; -- dia akan pakai block diplay mcm break--
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 2.1rem;
- 
-    animation-name: moveToleft; -- buat satu2 dari animation properties  --
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
     
-    @include respond(phone) {
-        letter-spacing: 1rem;
-        font-size: 2rem;
-    }
-
-    }
-    
-    &--sub{
-    display: block; -- dia akan pakai block diplay mcm break--
-    font-size: 1.5rem; 
-    font-weight: 400;
-    letter-spacing: 1.375rem; */
-    
-
-   /*  animation: moveToRight 2s ease-in-out;       buat semua in one line dari animation property, moveToright nama dari keyframes, 2s duration, ease-in-out animation timing function  */
-    
-    /* animation-name: moveToRight; nama animation dari keyframes */
-    /* animation-duration: 2s; duration animation ke kanan */
-
-    /* animation-delay: 3s; delay animation tu ntok appear kat browser */
-
-    
-    @include respond(phone) {
+    @include respond(tab-port) {
         letter-spacing: .5rem;
+        box-shadow: 0 122px 0 0 $color-border-white;
+
     }
 } 
 

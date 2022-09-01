@@ -7,7 +7,7 @@
 
 
     &_side{
-    height: 55rem;
+    height: 60rem;
     transition: all 0.9s ease;
     top: 0;
     left: 0;
@@ -44,7 +44,9 @@
 
         background-size: cover;
         height: 30rem;
-        margin: -2rem 1rem;
+        margin-left: auto;
+           margin-right: auto;
+           width: 100%;
         
 
 
@@ -78,24 +80,7 @@
 
     }
 
-    &_heading-span {
-        padding: 1rem 1rem;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone; //semua ni untuk jgn bagi decoration bertindih
-        
-        &--1{
-            background-image: linear-gradient(to right bottom, $color-primary-background-light, $color-primary-background-dark);
-        }
-
-        &--2{
-            background-image: linear-gradient(to right bottom, $color-primary-background-light, $color-primary-background-dark);
-        }
-
-        &--3{
-            background-image: linear-gradient(to right bottom, $color-primary-background-light, $color-primary-background-dark);
-        }
-        
-        }
+  
     
     &_details {
         text-align: center;
@@ -154,13 +139,14 @@
         
     
         &_side{
-        height: auto;
+        height: 66rem;
         position: relative;
         
     
             &--back{
                     transform: rotateY(0);
                     padding: 5rem 2rem;
+                    height: auto;
 
             }
         }
@@ -168,6 +154,12 @@
         &:hover &_side--front{
             transform: rotateY(0);
         }
+
+        &_picture{
+
+           margin-left: auto;
+           margin-right: auto;
+           width: 50%; }
     
      
     

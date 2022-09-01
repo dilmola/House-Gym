@@ -9,7 +9,9 @@
         border: 3px solid $color-border-black;
         height: 50rem;
 
-
+        @include respond(tab-port) { 
+            height: 35rem;
+        }
     
         &:hover {
         transform: translateY(-1.5rem) scale(1.03);

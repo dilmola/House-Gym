@@ -3,7 +3,9 @@
     margin-top: 0;
 
     @include respond(tab-port) {
-        padding: 11rem 0;
+        padding: 4rem 0 26rem 0px;
+        margin-top: 0;
+
 
     }
 }

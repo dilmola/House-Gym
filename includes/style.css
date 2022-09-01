@@ -96,36 +96,11 @@ body {
   width: 95%;
   box-shadow: 0 170px 0 0 #f1faee;
   display: inline-block;
-  margin-bottom: 30px;
-  /*  &--main{
-    display: block; -- dia akan pakai block diplay mcm break--
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 2.1rem;
- 
-    animation-name: moveToleft; -- buat satu2 dari animation properties  --
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    
-    @include respond(phone) {
-        letter-spacing: 1rem;
-        font-size: 2rem;
-    }
-
-    }
-    
-    &--sub{
-    display: block; -- dia akan pakai block diplay mcm break--
-    font-size: 1.5rem; 
-    font-weight: 400;
-    letter-spacing: 1.375rem; */
-  /*  animation: moveToRight 2s ease-in-out;       buat semua in one line dari animation property, moveToright nama dari keyframes, 2s duration, ease-in-out animation timing function  */
-  /* animation-name: moveToRight; nama animation dari keyframes */
-  /* animation-duration: 2s; duration animation ke kanan */
-  /* animation-delay: 3s; delay animation tu ntok appear kat browser */ }
-  @media (max-width: 37.5em) {
+  margin-bottom: 30px; }
+  @media (max-width: 56.25em) {
     .heading-primary {
-      letter-spacing: .5rem; } }
+      letter-spacing: .5rem;
+      box-shadow: 0 122px 0 0 #f1faee; } }
 
 .heading-primary--sub {
   font-size: 2.5rem;
@@ -177,6 +152,9 @@ body {
 
 .u-margin-top-large {
   margin-top: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-large {
+      margin-top: 5rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -194,7 +172,7 @@ body {
   margin-bottom: 8rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-bottom-large {
-      margin-bottom: 5rem !important; } }
+      margin-bottom: 12rem !important; } }
 
 .border-style {
   border: 3px solid #000000;
@@ -210,13 +188,15 @@ body {
   margin: 32px 0 4px;
   text-transform: uppercase;
   padding: 20px 40px;
-  /* padding box button */
   width: auto;
   display: inline-flex;
   border: none;
   background: none;
   z-index: 100;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .btn, .btn:link, .btn:visited {
+      margin: 28px 0 4px; } }
 
 .btn--1 {
   color: #000;
@@ -289,6 +269,10 @@ body {
       outline: 0.5rem solid #00000052;
       transform: scale(1.06) translateY(-0.2rem);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition_photo:hover {
+          transform: scale(1.4) translateY(-0.2rem);
+          z-index: 1000; } }
   .composition:hover .composition_photo:not(:hover) {
     transform: scale(0.9); }
 
@@ -302,6 +286,9 @@ body {
   background-color: #E05C5C;
   border: 3px solid #000000;
   height: 50rem; }
+  @media (max-width: 56.25em) {
+    .benefit-box {
+      height: 35rem; } }
   .benefit-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .benefit-box_img {
@@ -325,7 +312,7 @@ body {
   position: relative;
   height: 60rem; }
   .card_side {
-    height: 55rem;
+    height: 60rem;
     transition: all 0.9s ease;
     top: 0;
     left: 0;
@@ -348,7 +335,9 @@ body {
   .card_picture {
     background-size: cover;
     height: 30rem;
-    margin: -2rem 1rem; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
     .card_picture--1 {
       background-image: url(../includes/card-pics1.png); }
     .card_picture--2 {
@@ -365,16 +354,6 @@ body {
     right: 2rem;
     text-align: right;
     width: 70%; }
-  .card_heading-span {
-    padding: 1rem 1rem;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone; }
-    .card_heading-span--1 {
-      background-image: linear-gradient(to right bottom, #5e8b7e, #2f5d62); }
-    .card_heading-span--2 {
-      background-image: linear-gradient(to right bottom, #5e8b7e, #2f5d62); }
-    .card_heading-span--3 {
-      background-image: linear-gradient(to right bottom, #5e8b7e, #2f5d62); }
   .card_details {
     text-align: center; }
     .card_details ul {
@@ -409,13 +388,18 @@ body {
     .card {
       height: auto; }
       .card_side {
-        height: auto;
+        height: 66rem;
         position: relative; }
         .card_side--back {
           transform: rotateY(0);
-          padding: 5rem 2rem; }
+          padding: 5rem 2rem;
+          height: auto; }
       .card:hover .card_side--front {
         transform: rotateY(0); }
+      .card_picture {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; }
       .card_details ul {
         list-style: none;
         width: 80%;
@@ -513,58 +497,6 @@ body {
     width: 100%;
     object-fit: cover; }
 
-/*.booking{
-    background-image: linear-gradient(90deg, 
-                                    ($color-secondary-color,) 0%,
-                                    ($color-secondary-color,) 58%,
-                                    transparent 58%)
-                                    ,url(../includes/booking_img.jpg); //solid colors gradient
-    background-size: 100%;
-    border-radius: 0px;
-    border: $border-black;
-    
-
-    @include respond(tab-land) {
-        background-image: linear-gradient(106deg, 
-                            rgba($color-font-green, .8) 0%,
-                            rgba($color-font-green, .8) 70%,
-                            transparent 70%) 
-                            ,url(../includes/booking_img.jpg); //solid colors gradient
-        background-size: 100%;
-        border-radius: 0px;
-        box-shadow: 0 1.5rem 3rem rgba($color-button-black, .2); 
-
-    
-    }
-
-    @include respond(tab-port) {
-        background-image: linear-gradient(106deg, 
-                            rgba($color-font-green, .8) 0%,
-                            rgba($color-font-green, .8) 100%,
-                            transparent 100%) 
-                            ,url(../includes/booking_img.jpg); //solid colors gradient
-        background-size: cover;
-        border-radius: 0px;
-        box-shadow: 0 1.5rem 3rem rgba($color-button-black, .2); 
-
-        
-    }
-
-    &_form{
-        padding: 6rem;
-        width: 60%;
-
-        @include respond(tab-land) {
-            padding: 6rem;
-            width: 70%; 
-        }
-
-        @include respond(tab-port) {
-            padding: 6rem;
-            width: 100%; 
-        }
-    }
-} */
 .booking {
   display: flex;
   flex-direction: column;
@@ -575,6 +507,9 @@ body {
     grid-template-columns: 490px 350px;
     background-size: 100%;
     border: 3px solid #000000; }
+    @media (max-width: 56.25em) {
+      .booking-form {
+        grid-template-columns: 430px 350px; } }
     .booking-form--left {
       background: #D6D6D7;
       height: auto;
@@ -641,7 +576,8 @@ body {
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  text-transform: uppercase; }
 
 .form_radio-button {
   height: 3rem;
@@ -668,15 +604,6 @@ body {
 
 .form_radio_input:checked ~ .form_radio_label .form_radio-button::after {
   opacity: 1; }
-
-.card {
-  display: grid;
-  grid-template-columns: 420px 420px; }
-  .card_img {
-    background: url("https://images.unsplash.com/photo-1660317124738-99cd716766f6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE3NjQ3MzU&ixlib=rb-1.2.1&q=80") center/cover no-repeat; }
-  .card_content {
-    background: #000;
-    height: 200px; }
 
 .popup {
   background-color: #00000052;
@@ -770,9 +697,6 @@ body {
   /*size of polygon (left top, left top, left top, left top) */
   padding: 25rem 0;
   position: relative; }
-  .header__logo {
-    height: 3rem;
-    /* ntok size biasakan pakai height sahaja becoz width akan auto ikut*/ }
   .header_right {
     position: relative; }
     .header_right_photo--p1 {
@@ -783,6 +707,9 @@ body {
       border: 3px solid #000000;
       z-index: 500;
       transition: all .2s; }
+      @media (max-width: 56.25em) {
+        .header_right_photo--p1 {
+          width: 70%; } }
       .header_right_photo--p1:hover {
         transform: translateY(-2rem); }
   .header_right-stroke {
@@ -792,6 +719,10 @@ body {
     height: 43rem;
     transition: all .2s;
     z-index: -1; }
+    @media (max-width: 56.25em) {
+      .header_right-stroke {
+        width: 70%;
+        height: 38rem; } }
     .header_right-stroke:hover {
       transform: translateX(-2rem); }
 
@@ -1075,7 +1006,8 @@ body {
   margin-top: 0; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 11rem 0; } }
+      padding: 4rem 0 26rem 0px;
+      margin-top: 0; } }
 
 .section-benefit {
   padding: 24rem 0 24rem 0;
