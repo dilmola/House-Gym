@@ -132,7 +132,10 @@ text-align: center;    }
 
           @include respond(tab-port) {
             text-align: center;
-            margin: 0 20rem;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+
             }
     
      }
