@@ -699,7 +699,7 @@ body {
 
 @media (max-width: 56.25em) {
   .booking-form {
-    grid-template-columns: 435px 350px;
+    grid-template-columns: 435px 310px;
   }
 }
 
