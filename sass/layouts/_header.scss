@@ -95,9 +95,9 @@
       @include respond(tab-port) {
         display: block;
         width: 100%;
-
         
-    }
+
+text-align: center;    }
 
   
   &__logo-box{
@@ -130,24 +130,22 @@
       position: relative;
      display: flex;
 
-     
-     @include respond(tab-port) {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      }
+          @include respond(tab-port) {
+            text-align: center;
+            margin: 0 20rem;
+            }
+    
      }
 
      &__list{
-      list-style: none;
+      list-style: none; 
+
 
       @include respond(tab-port) {
+           
         display: inline-block;
         }
-      
-         
-
-}
+     }
 
 &__link{
   display: flex;
@@ -159,6 +157,13 @@
   position: relative;
 
   
+
+  @include respond(tab-port) {
+    margin-left: 0;
+
+    }
+
+
   
   &:link,&:visited {
     color: $color-main-font-black;

@@ -807,7 +807,8 @@ body {
   @media (max-width: 56.25em) {
     .nav {
       display: block;
-      width: 100%; } }
+      width: 100%;
+      text-align: center; } }
   .nav__logo-box {
     position: relative;
     /* selalu parent mesti ada position , biasakan pakai absolute*/ }
@@ -828,9 +829,8 @@ body {
     display: flex; }
     @media (max-width: 56.25em) {
       .nav__navigation {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto; } }
+        text-align: center;
+        margin: 0 20rem; } }
   .nav__list {
     list-style: none; }
     @media (max-width: 56.25em) {
@@ -843,6 +843,9 @@ body {
     margin-left: 40px;
     text-decoration: none;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .nav__link {
+        margin-left: 0; } }
     .nav__link:link, .nav__link:visited {
       color: #000000;
       border: 3px solid rgba(254, 254, 254, 0);
