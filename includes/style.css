@@ -773,9 +773,6 @@ body {
   .header__logo {
     height: 3rem;
     /* ntok size biasakan pakai height sahaja becoz width akan auto ikut*/ }
-    @media (max-width: 56.25em) {
-      .header__logo {
-        height: 2.5rem; } }
   .header_right {
     position: relative; }
     .header_right_photo--p1 {
@@ -807,22 +804,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .nav {
+      display: block;
+      width: 100%; } }
   .nav__logo-box {
     position: relative;
     /* selalu parent mesti ada position , biasakan pakai absolute*/ }
     @media (max-width: 56.25em) {
       .nav__logo-box {
-        top: 9%;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+        margin-bottom: 5rem; } }
   .nav__logo {
     position: relative;
     height: 3rem; }
+    @media (max-width: 56.25em) {
+      .nav__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center; } }
   .nav__navigation {
     position: relative;
     display: flex; }
+    @media (max-width: 56.25em) {
+      .nav__navigation {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto; } }
   .nav__list {
     list-style: none; }
+    @media (max-width: 56.25em) {
+      .nav__list {
+        display: inline-block; } }
   .nav__link {
     display: flex;
     color: #333;
