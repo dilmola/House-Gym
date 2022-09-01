@@ -16,7 +16,6 @@
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem ($color-button-black, .2);
 
     border: 3px solid $color-border-black;
 
@@ -65,20 +64,6 @@
 
     }
 
-    &_heading {
-        font-size: 2.8rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        color: $color-font-white;
-
-        position: absolute;
-        top: 12rem;
-        right: 2rem;
-        text-align: right;
-        width: 70%;
-        
-
-    }
 
   
     
@@ -112,7 +97,7 @@
     }
 
     &_price-box{
-        color: $color-font-white;
+        color: $color-main-font-white;
         margin-bottom: 8rem;
     }
 

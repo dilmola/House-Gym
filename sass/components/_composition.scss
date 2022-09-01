@@ -15,7 +15,6 @@
             float: left;
             position: relative;
             width: 33.3%;
-            box-shadow: 0 1.5rem 4rem ($color-button-black, .2);
         }
         
         &--p1 {
@@ -55,7 +54,7 @@
         }
 
         &:hover {
-            outline: 0.5rem solid $color-button-black;
+            outline: 0.5rem solid $color-border-black;
             
             transform: scale(1.06) translateY(-0.2rem);
             z-index: 20;

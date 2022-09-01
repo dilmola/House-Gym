@@ -1,7 +1,6 @@
 .popup{
-    background-color: $color-button-black;
 
-    height: 100vh; //selalu pakai vh ntok fullscreen
+    height: 100vh; 
     width: 100%;
     position: fixed;
     top:0;
@@ -22,7 +21,7 @@
     &_close{
         &:link,
         &:visited{
-            color: $color-button-black;
+            color: $color-border-black-opacity;
             position: absolute;
             top:2.5rem;
             right: 2.5rem;
@@ -34,7 +33,7 @@
         }
 
         &:hover{
-            color: $color-button-black;
+            color: $color-main-font-black;
         }
     }
 

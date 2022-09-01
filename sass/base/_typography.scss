@@ -9,7 +9,7 @@
     border-radius: 10px;
     height: 3px;
     width: 95%;
-    box-shadow: 0 170px 0 0 $color-border-white;
+    box-shadow: 0 170px 0 0 $color-border-white-underline;
 
     display: inline-block;
 
@@ -20,7 +20,7 @@
     
     @include respond(tab-port) {
         letter-spacing: .5rem;
-        box-shadow: 0 122px 0 0 $color-border-white;
+        box-shadow: 0 122px 0 0 $color-border-white-underline;
 
     }
 } 
@@ -41,7 +41,7 @@
     display: inline-block;
 
     border-radius: 10px;
-    height: 9px;
+    height: 5px;
     box-shadow: 0 50px 0 0 $color-border-red-underline;
 
     margin-bottom: 30px;
