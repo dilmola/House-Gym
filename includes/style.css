@@ -625,11 +625,7 @@ body {
   height: 100vh;
   background-color: #E05C5C;
   background-size: cover;
-  /*cover maksud fixed satu page */
   background-position: top;
-  /*kat mana nak position fixed */
-  /* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
-  /*size of polygon (left top, left top, left top, left top) */
   padding: 25rem 0;
   position: relative; }
   .header_right {
@@ -670,14 +666,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .nav {
+      display: block;
+      width: 100%;
+      text-align: center; } }
   @media (max-width: 56.25em) {
     .nav {
       display: block;
       width: 100%;
       text-align: center; } }
   .nav__logo-box {
-    position: relative;
-    /* selalu parent mesti ada position , biasakan pakai absolute*/ }
+    position: relative; }
     @media (max-width: 56.25em) {
       .nav__logo-box {
         margin-bottom: 5rem; } }
