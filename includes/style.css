@@ -546,6 +546,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  background-color: #000000cb;
   z-index: 9999;
   opacity: 0;
   visibility: hidden; }
