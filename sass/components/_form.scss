@@ -6,16 +6,13 @@
     
         &_input{
             font-size: 1.5rem;
-            font-family: inherit; //kena letak
-    
-            color: inherit; //kena letak
             padding: 1.5rem 2rem;
             border-radius: 2px;
             background-color: $color-button-box-color;
             border: none;
             border-bottom: 5px solid transparent;
             width: 95%;
-            display: block; //means dia ambik satu block
+            display: block; 
             transition: all .7s;
     
             &:focus{
@@ -47,7 +44,7 @@
             
         }
     
-        &_input:placeholder-shown + &_label // :placeholder-shown element that is currently displaying placeholder text
+        &_input:placeholder-shown + &_label 
          {
             opacity: 0;
             visibility: hidden;

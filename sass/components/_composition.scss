@@ -6,10 +6,10 @@
         
         position: absolute;
         border-radius: 0;
-        z-index: 10;        //gamba bertindih baru pakai
+        z-index: 10;        
         transition: all .2s;
         outline-offset: 2rem;
-        border: $border-black;   //
+        border: $border-black;   
 
         @include respond(tab-port) {
             float: left;

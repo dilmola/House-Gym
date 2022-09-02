@@ -47,7 +47,7 @@
       display: table;
       border: $border-black;
 
-      overflow: hidden; //ntok overflow clip dlm content
+      overflow: hidden; 
     }
 
     &_left{
@@ -108,7 +108,7 @@
         column-gap: 4rem;
         
         -moz-column-count: 2;
-        -moz-column-gap: 4rem; //default ambik 1em = 14px; 
+        -moz-column-gap: 4rem; 
 
         -webkit-hyphens: auto;
         -ms-hyphens: auto;

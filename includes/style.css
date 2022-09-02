@@ -15,44 +15,9 @@ $breakpoint arguement choices:
 /* 
 1em =16px
 */
-@keyframes moveToleft {
-  /* (moveInleft) bleh namakan apa saja properties ni */
-  0% {
-    opacity: 0;
-    /* opacity means transparent 0 means transparent habiss */
-    transform: translateX(-100px);
-    /* translate x maksud x-axis and -100px for to left */ }
-  80% {
-    transform: translateX(10px);
-    /* ke belakang sket 10px */ }
-  100% {
-    opacity: 1;
-    /* opacity means transparent 1 means tak transparent dah */
-    transform: translate(0);
-    /* 0 means kembali ke asal axis */ } }
-
-@keyframes moveToRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 *,
 *::after,
 *::before {
-  /* bintang tu is universal selector ntok reset bila bukak setiap browser for render a page for exact same way contoh h1 mungkin ada default margin */
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
@@ -73,13 +38,11 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #000000;
   background: #f1faee;
   box-sizing: border-box;
-  padding: 0;
-  /* dari content ke margin ke border ke padding*/ }
+  padding: 0; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -88,8 +51,6 @@ body {
   color: #000000;
   text-transform: uppercase;
   font-weight: 900;
-  backface-visibility: visible;
-  /* taknak bagi terangkat, dia mcm ada back property berjalan*/
   font-size: 4.5rem;
   border-radius: 10px;
   height: 3px;
@@ -469,20 +430,6 @@ body {
   .story:hover .story_img {
     filter: blur(3px) brightness(80%); }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .80;
-  overflow: hidden; }
-  .bg-video_content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
 .booking {
   display: flex;
   flex-direction: column;
@@ -504,7 +451,8 @@ body {
       justify-content: center;
       align-items: center; }
     .booking-form--right {
-      background-color: #f1faee; }
+      background-color: #f1faee;
+      overflow: hidden; }
       .booking-form--right_img {
         background-size: auto;
         height: 35rem;
@@ -519,8 +467,6 @@ body {
 
 .form_input {
   font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: #ffffff;
