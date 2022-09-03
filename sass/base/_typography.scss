@@ -15,11 +15,18 @@
     margin-bottom: 30px;
 
     
-
-    
     @include respond(tab-port) {
         letter-spacing: .5rem;
         box-shadow: 0 122px 0 0 $color-border-white-underline;
+
+    }
+
+    @include respond(phone) {
+
+        letter-spacing: .3rem;
+        box-shadow: 0 92px 0 0 $color-border-white-underline;
+        width: auto;
+
 
     }
 } 
@@ -54,6 +61,8 @@
     @include respond(phone) {
         letter-spacing: 1rem;
         font-size: 2rem;
+        box-shadow: 0 32px 0 0 $color-border-red-underline;
+
     }
 }
 

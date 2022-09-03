@@ -2,12 +2,18 @@
     max-width: $grid-width;
 
     margin-top: 12rem;
-    //background-color: $background-grid-colors;
     margin: -20px auto auto;
+
+    @include respond(tab-land) {
+                max-width: 105rem;
+            }
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
+
+        
+        
         @include respond(tab-port) {
             margin-bottom: $gutter-vertical-small;
         }

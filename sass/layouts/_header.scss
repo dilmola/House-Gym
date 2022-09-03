@@ -31,7 +31,14 @@
 
             @include respond(tab-port) {
               width: 70%;
+              left: 10rem;
+
               }
+
+              @include respond(phone) {
+                left: 10rem;
+  
+                }
 
           &:hover {
               transform: translateY(-2rem);
@@ -60,6 +67,11 @@
           height: 38rem;
           }
 
+          @include respond(phone) {
+            left: 10rem;
+            
+            }
+
         &:hover {
           transform: translateX(-2rem);
           }
@@ -84,30 +96,37 @@
   justify-content: space-between;
   align-items: center;
 
-
+      @include respond(tab-port) {
+              display: block;
+              width: 100%;
+              text-align: center;
+              padding: 36px 0px;    
+            }
   
       @include respond(phone) {
         display: block;
         width: 100%;
         text-align: center;    
+        padding: 36px 0px;
+
       }
 
-      @include respond(tab-port) {
-        display: block;
-        width: 100%;
-        text-align: center;    
-      }
+      
 
   
   &__logo-box{
     position: relative;
   
-
+      
       @include respond(tab-port) {
         margin-bottom: 5rem;
         
     }
-  
+
+      @include respond(phone) {
+            margin-bottom: 3rem;
+          }
+
  
 
 }
@@ -159,11 +178,20 @@
   position: relative;
 
   
+  @include respond(tab-land) {
+    margin-left: 12px;
+  }
 
   @include respond(tab-port) {
-    margin-left: 0;
+    margin-left: 8px;
 
     }
+
+  @include respond(phone) {
+    margin-left: 4px;
+  
+    }
+    
 
 
   
