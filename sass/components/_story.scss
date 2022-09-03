@@ -93,5 +93,19 @@
         filter:blur(3px) brightness(80%);
     }
 
+    &_comma-img{
+        position: absolute;
+        top: -10%;
+        left: 83%;
+        width: 5rem;
+        background-color: $color-main-background-red;
+        border: $border-black;
+
+        @include respond(phone) {
+            transform: skewX(0deg);
+    
+        }
+    }
+
    
 }

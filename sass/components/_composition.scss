@@ -55,6 +55,7 @@
 
         &:hover {
             outline: 0.5rem solid $color-border-black;
+            border: none;
             
             transform: scale(1.06) translateY(-0.2rem);
             z-index: 20;
