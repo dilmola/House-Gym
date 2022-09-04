@@ -116,10 +116,9 @@
   
   &__logo-box{
     position: relative;
-  
       
       @include respond(tab-port) {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         
     }
 
@@ -133,13 +132,17 @@
 
     &__logo{
       position: relative; 
-        height: 3rem;
+        height: 2rem;
+        align-items: center;
+        margin-top: 1rem;
 
           @include respond(tab-port) {
             display: block;
             margin-left: auto;
             margin-right: auto;
             align-items: center;
+            margin-top: 0;
+
             }
         
         }
